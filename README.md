@@ -6,7 +6,6 @@ It's built with [Astro](https://astro.build), and uses [TinaCMS](https://tina.io
 
 ## Todo
 
-- [ ] Add your TinaCMS keys (see below)
 - [ ] Edit the images in `public/` (optional)
 
 After this, you can add your content to `src/posts` with Markdown files, or with TinaCMS by going to `yoururl.com/admin`!
