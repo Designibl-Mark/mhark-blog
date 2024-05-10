@@ -1,18 +1,17 @@
 ---
 layout: ../layouts/BlogPost.astro
-title: Hello, world!
+title: 'Hello, world!'
 slug: hello-world
-description: >-
-  Welcome to my blog & promotion news!
+description: Welcome to my blog & promotion news!
 tags:
   - personal
   - spotship
-added: "May 10 2024"
+added: 2024-05-09T23:00:00.000Z
 ---
 
 Hello World 👋🏻
 
-I’m incredibly happy to share that I have been promoted to CTO at Spot Ship 🎉 & with this transition I thought it was about time I started up my blog.
+I’m incredibly happy to share that I have been promoted to CTO at [Spot Ship](https://spot-ship.com "Spot Ship") 🎉 & with this transition I thought it was about time I started up my blog.
 
 Spot Ship has been a fantastic journey, and I'm incredibly excited to continue to be one of the driving forces of growth in the company.
 
