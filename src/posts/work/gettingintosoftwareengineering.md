@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/BlogPost.astro
 title: Getting Into Software Engineering
-slug: work/gettingIntoSoftwareEngineering
+slug: gettingIntoSoftwareEngineering
 description: Answering the question how do I get a job as a software engineer.
 tags:
   - advice
