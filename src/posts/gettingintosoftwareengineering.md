@@ -9,7 +9,7 @@ tags:
 added: 2024-05-10T13:29:21.700Z
 ---
 
-This is a question I am asked regularly for advice on how to get your first job as a software engineer.
+A question I am asked regularly for advice on, is how to get your first job as a software engineer.
 
 ## Context
 
