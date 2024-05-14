@@ -53,7 +53,7 @@ Now like with most of these changes in this post, take a second to pause and won
 
 [Full docs](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
 
-⚠️ I use the `--global` flag as I want these settings for all repositiories on my machine, you may want to have multiple gitconfigs with different setups ofr each repositiory.
+> ⚠️ I use the `--global` flag as I want these settings for all repositiories on my machine, you may want to have multiple gitconfigs with different setups for each repositiory.
 
 We can now use `git config --global --edit` and it nicely opens in vscode or your chosen editor 🤯
 
@@ -167,7 +167,7 @@ cm = commit -m
 edit = commit --amend
 ```
 
-⚠️ N.B. Amending modifies the commit history, to make things easy on everyone never amend pushed commits.
+> ⚠️ N.B. Amending modifies the commit history, to make things easy on everyone never amend pushed commits.
 
 #### Update commit
 
