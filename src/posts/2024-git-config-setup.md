@@ -108,7 +108,7 @@ git config --global push.autoSetupRemote true
 A note on aliases, I love them, they can save so much time however it is important to note 2 things.
 
 1. If you are going to use aliases, understand what the commands do and know them so that you can help others without the same aliases setup. You will become dependant on them and have to re-set them up on every new machine.
-2. Be careful that the alias you create doesn't use the same wording as another command as this will cause issues. Also make sure it is actually quicker to type than the original!
+2. Be careful that the alias you created doesn't use the same wording as another command as this will cause issues. Also make sure it is actually quicker to type than the original!
 
 Onto the fun bit!
 
