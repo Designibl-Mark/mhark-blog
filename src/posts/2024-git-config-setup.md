@@ -159,7 +159,7 @@ This also means we can pass in parameters with:
 #### Grab all changes
 
 ```
-grab = "!f() { git fetch && git pull }; f"
+grab = "!git fetch && git pull"
 ```
 
 #### Cleanup all merged branches
