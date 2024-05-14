@@ -18,6 +18,12 @@ All commands are run from the root of the project, from a terminal:
 
 You go to `localhost:4321/admin/index.html` to see the CMS and use it. If you want to clone this for yourself, you'll need a `.env.development` file so clone and edit `.env.example`
 
+## Deploying changes
+
+I use a manual deployment step in Vercel to promote a staged production build to the assigned domains.
+
+But to push to preview branches just push changes into the master brnach iether locally or via tina cms.
+
 ## Credits
 
 - [Cassidy](https://x.com/cassidoo/status/1788810892152340671) - creator of the [Blhag template](https://github.com/cassidoo/blahg) originally used.
