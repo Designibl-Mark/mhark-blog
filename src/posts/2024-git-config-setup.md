@@ -28,7 +28,7 @@ First make sure you have installed the command line command for vscode.
 
 1. Ensure Visual Studio Code Application is in your Applications folder.
 2. Open vscode.
-3. Open the command palette (<kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>P</kbd>).
+3. Open the command palette (__cmd + shift + P__).
 4. Type `shell command`.
 5. Click option to "Install 'code' command in PATH".
 6. Start a new terminal or restart your terminal session for the new $PATH value to take effect.
@@ -85,10 +85,18 @@ git checkout -b "mybranch"
 Then upon trying to push or pull the branch git complains about no tracking infromation for the branches
 
 > There is no tracking information for the current branch.
+>
 > Please specify which branch you want to merge with.
-> See git-pull(1) for detailsgit pull <remote> <branch>If you wish to set tracking information for this branch you can do so with:git branch --set-upstream-to=origin/<branch> mybranch
+>
+> See git-pull(1) for details
+>
+> git pull remote branch
+>
+> If you wish to set tracking information for this branch you can do so with:
+>
+> git branch --set-upstream-to=origin/branch mybranch
 
-So then you re-run the command with `--set-upstream-to=origin/mybranch`
+So then you re-run the command with the flag `--set-upstream-to=origin/mybranch`
 
 Instead just setup the following git config:
 
@@ -133,13 +141,13 @@ Aliases can be great for if you want to keep using the normal commands but often
 
 #### Open config
 
-```
+```gitconfig
 conf = config --global --edit
 ```
 
 #### New local branch
 
-```
+```gitconfig
 newb = checkout -b
 ```
 
@@ -149,7 +157,7 @@ newb = checkout -b
 
 You can changes this to `-D` which deletes the branch irrespective of its merged status.
 
-```
+```gitconfig
 delb = branch -d
 ```
 
@@ -157,13 +165,13 @@ delb = branch -d
 
 `-m` lets you write the commit message
 
-```
+```gitconfig
 cm = commit -m
 ```
 
 #### Edit message
 
-```
+```gitconfig
 edit = commit --amend
 ```
 
@@ -175,13 +183,13 @@ edit = commit --amend
 
 `--no-edit` prevents from edit the commit message.
 
-```
+```gitconfig
 up = commit -a -ammend --no-edit
 ```
 
 #### Update commit and edit the message
 
-```
+```gitconfig
 upm = commit -a -ammend
 ```
 
@@ -189,13 +197,13 @@ upm = commit -a -ammend
 
 `-a` adds all unstaged changes to commit
 
-```
+```gitconfig
 cma = commit -a -m
 ```
 
 #### Unstage changes
 
-```
+```gitconfig
 rh = reset HEAD
 ```
 
@@ -205,7 +213,7 @@ rh = reset HEAD
 
 `-a` flag is used to show the branches on origin too.
 
-```
+```gitconfig
 lba = branch -a
 ```
 
@@ -215,7 +223,7 @@ In my workflow I always delete the branch after every merged pull request so tha
 
 N.B. This is a desturctive action so make sure you undertsand this command before using so you don't lose work.
 
-```
+```gitconfig
 syncb = fetch -prune
 ```
 
@@ -235,7 +243,7 @@ Introducing the !(bang) operator which allows us to do just this!
 
 Now we can wrap our git command in an anonymous function.
 
-```
+```gitconfig
 my_alias = "!f() { <your complex commands> }; f"
 ```
 
@@ -248,13 +256,13 @@ This also means we can pass in parameters with:
 
 #### Grab all changes
 
-```
+```gitconfig
 grab = "!git fetch && git pull"
 ```
 
 #### Cleanup all merged branches
 
-```
+```gitconfig
 bclean = "!f() { DEFAULT=$(git default); git branch --merged ${1-$DEFAULT} | grep -v " ${1-$DEFAULT}$" | xargs git branch -d; }; f"
 ```
 
