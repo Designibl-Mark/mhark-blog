@@ -12,6 +12,8 @@ added: 2024-05-14T09:26:49.053Z
 
 There are a number of basic setup steps you can do to make your life easier when using git from the command line.
 
+Inspired by a [video I watched this morning by Philomatics](https://www.youtube.com/watch?v=CAnQ4b0uais\&t=128s). I though I would expand on what has helped me out.
+
 ## Stop Getting Stuck In Vim
 
 Some people love [Vim](https://www.vim.org/), but if like me you just don't like it or never got round to learning Vim, and you are forever forgetting that the command you need to use is `:wq!` to leave Vim any time you forgot to add a message on your `git commit` 🙈
@@ -159,12 +161,62 @@ delb = branch -d
 cm = commit -m
 ```
 
+#### Edit message
+
+```
+edit = commit --amend
+```
+
+⚠️ N.B. Amending modifies the commit history, to make things easy on everyone never amend pushed commits.
+
+#### Update commit
+
+`-a` adds all current changes
+
+`--no-edit` prevents from edit the commit message.
+
+```
+up = commit -a -ammend --no-edit
+```
+
+#### Update commit and edit the message
+
+```
+upm = commit -a -ammend
+```
+
 #### Commit all unstaged changes with message
 
 `-a` adds all unstaged changes to commit
 
 ```
 cma = commit -a -m
+```
+
+#### Unstage changes
+
+```
+rh = reset HEAD
+```
+
+[Good video explanation by Philomatics](https://youtu.be/CAnQ4b0uais?t=255)
+
+#### List all branches
+
+`-a` flag is used to show the branches on origin too.
+
+```
+lba = branch -a
+```
+
+#### Prune old branches
+
+In my workflow I always delete the branch after every merged pull request so that our repository stays neat and I don't have a massive dropdown list of branches when making pull requests. But locally things aren't so neat. So you can use the following command to sync your local branches to match the origin branches.
+
+N.B. This is a desturctive action so make sure you undertsand this command before using so you don't lose work.
+
+```
+syncb = fetch -prune
 ```
 
 ### Even More Complex Aliases
@@ -209,3 +261,7 @@ bclean = "!f() { DEFAULT=$(git default); git branch --merged ${1-$DEFAULT} | gre
 [Credit](https://haacked.com/archive/2014/07/28/github-flow-aliases/) provided this & has a great breakdown of how this works aswell.
 
 So every so often I run `git bclean dev` and it removes every local branch I have already meregd into dev.
+
+## Conclusion
+
+Aliases can be super helpful when used correctly and you can create some complex workflows. But make sure you understand what they are doing, and that whichever way you use git, that you are aligned with your team.
