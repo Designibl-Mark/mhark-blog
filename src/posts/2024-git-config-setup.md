@@ -266,7 +266,7 @@ grab = "!git fetch && git pull"
 bclean = "!f() { DEFAULT=$(git default); git branch --merged ${1-$DEFAULT} | grep -v " ${1-$DEFAULT}$" | xargs git branch -d; }; f"
 ```
 
-[Credit](https://haacked.com/archive/2014/07/28/github-flow-aliases/) provided this & has a great breakdown of how this works aswell.
+[Credit Haacked](https://haacked.com/archive/2014/07/28/github-flow-aliases/) who provided this & has a great breakdown of how this works aswell.
 
 So every so often I run `git bclean dev` and it removes every local branch I have already meregd into dev.
 
