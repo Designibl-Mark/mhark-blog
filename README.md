@@ -4,12 +4,6 @@
 
 It's built with [Astro](https://astro.build), and uses [TinaCMS](https://tina.io) to edit the content!
 
-## Todo
-
-- [ ] Edit the images in `public/` (optional)
-
-After this, you can add your content to `src/posts` with Markdown files, or with TinaCMS by going to `yoururl.com/admin`!
-
 ## Run it yourself
 
 All commands are run from the root of the project, from a terminal:
@@ -22,13 +16,7 @@ All commands are run from the root of the project, from a terminal:
 | `bun run build`                  | Build your production site to `./dist/`                       |
 | `bun run preview`                | Preview your build locally, before deploying                  |
 
-You go to `localhost:4321/admin/index.html` to see the CMS and use it. If you want to clone this for yourself, you'll need a `.env.development` file that has the following in it:
-
-```dotenv
-TINACLIENTID=<from tina.io>
-TINATOKEN=<from tina.io>
-TINASEARCH=<from tina.io>
-```
+You go to `localhost:4321/admin/index.html` to see the CMS and use it. If you want to clone this for yourself, you'll need a `.env.development` file so clone and edit `.env.example`
 
 ## Credits
 
