@@ -129,6 +129,44 @@ So you can either keep adding to the list in the config or use the command line.
 
 Aliases can be great for if you want to keep using the normal commands but often miss type them e.g. `git config --global alias.stts "status"`
 
+#### Open config
+
+```
+conf = config --global --edit
+```
+
+#### New local branch
+
+```
+newb = checkout -b
+```
+
+#### Delete local branch
+
+`-d` only deletes the branch if it has already been fully merged in its upstream branch.
+
+You can changes this to `-D` which deletes the branch irrespective of its merged status.
+
+```
+delb = branch -d
+```
+
+#### Commit with message
+
+`-m` lets you write the commit message
+
+```
+cm = commit -m
+```
+
+#### Commit all unstaged changes with message
+
+`-a` adds all unstaged changes to commit
+
+```
+cma = commit -a -m
+```
+
 ### Even More Complex Aliases
 
 When you get into the world of aliases you may find you want to be come even more efficient and run multiple commands at once etc.
@@ -169,3 +207,5 @@ bclean = "!f() { DEFAULT=$(git default); git branch --merged ${1-$DEFAULT} | gre
 ```
 
 [Credit](https://haacked.com/archive/2014/07/28/github-flow-aliases/) provided this & has a great breakdown of how this works aswell.
+
+So every so often I run `git bclean dev` and it removes every local branch I have already meregd into dev.
