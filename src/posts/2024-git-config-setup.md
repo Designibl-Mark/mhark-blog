@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/BlogPost.astro
 title: Stop getting stuck in Vim and some other helpful git setup
-slug: /2024-git-config-setup
+slug: 2024-git-config-setup
 description: Some helpful tips on getting your local git setup
 tags:
   - technical
