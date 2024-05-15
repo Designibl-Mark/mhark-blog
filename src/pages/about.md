@@ -1,10 +1,10 @@
-# Welcome to my blog
+# Welcome to Mhark!
 
 Welcome to this blog by [Mark](https://bento.me/markh)!
 
 ## About Me
 
-I am the CTO at [Spot Ship](https:spot-ship.com), a UK startup creating a first class global "Shipping Platform for Brokers" that utilises AI and Machine learning to make the most from your data.
+I am the CTO at [Spot Ship](https:spot-ship.com), a UK startup creating a first class global __"Shipping Platform for Brokers"__ that utilises AI and Machine learning to make the most from your data.
 
 If you want to find out more about how you can invest in our growth or require a platform demo feel free to get in touch.
 

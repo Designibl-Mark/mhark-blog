@@ -6,7 +6,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 <header>
 	<div class="header-section">
 		<div class="header-frame">
-			<h1>{SITE_TITLE}</h1>
+			<picture>
+				<source srcset="logo-silver.svg" media="(prefers-color-scheme: dark)">
+				<img src="logo-gotham.svg">
+			</picture>
 			<h2>{SITE_DESCRIPTION}</h2>
 		</div>
 	</div>
