@@ -7,8 +7,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 	<div class="header-section">
 		<div class="header-frame">
 			<picture>
-				<source srcset={`${import.meta.env.NEXT_PUBLIC_VERCEL_ENV !== "local" ? "https://" : "http://"}${import.meta.env.PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}/logo-silver.svg`} media="(prefers-color-scheme: dark)">
-				<img src={`${import.meta.env.NEXT_PUBLIC_VERCEL_ENV !== "local" ? "https://" : "http://"}${import.meta.env.PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}/logo-gotham.svg`} alt="Logo for Mhark">
+				<source srcset={`${import.meta.env.PUBLIC_VERCEL_ENV !== "local" ? "https://" : "http://"}${import.meta.env.PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}/logo-silver.svg`} media="(prefers-color-scheme: dark)">
+				<img src={`${import.meta.env.PUBLIC_VERCEL_ENV !== "local" ? "https://" : "http://"}${import.meta.env.PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}/logo-gotham.svg`} alt="Logo for Mhark">
 			</picture>
 			<h2>{SITE_DESCRIPTION}</h2>
 		</div>
