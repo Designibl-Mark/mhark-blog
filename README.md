@@ -22,7 +22,7 @@ You go to `localhost:4321/admin/index.html` to see the CMS and use it. If you wa
 
 I use a manual deployment step in Vercel to promote a staged production build to the assigned domains.
 
-But to push to preview branches just push changes into the master brnach iether locally or via tina cms.
+But to push to preview branches just push changes into the master branch either locally or via tina cms.
 
 ## Credits
 
