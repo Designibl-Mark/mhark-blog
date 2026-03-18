@@ -1,10 +1,10 @@
-# Welcome to Mhark!
+# Welcome to Mhark
 
-A tech focussed blog by [Mark Hardwick](https://bento.me/markh), with a sprinkle of other topics.
+A tech focussed blog by Mark Hardwick, with a sprinkle of other topics.
 
 ## About Me
 
-I am the Founder of [Designibl](https:designibl.com) a UK startup which is currently developing [Land Your Home](https:landyourhome.co.uk) to solve the headache of managing house sale chains.
+I am the Founder of [Designibl](https://www.designibl.com) a UK startup which is currently developing [Land Your Home](https://www.landyourhome.co.uk) to solve the headache of managing house sale chains.
 
 If you want to find out more about how you can invest in our growth or require a platform demo feel free to [get in touch](mailto:mark@designibl.com).
 
@@ -18,17 +18,17 @@ I founded __Designibl__, a technology startup in the UK, that went on hiatus as 
 
 #### 🚢 Maritime Tech
 
-- __CTO @[Spot Ship](https://spot-ship.com)__
+- __CTO @[Spot Ship](https://www.spot-ship.com)__
 
 #### ⚡️ EV & Energy Management
 
-- __[Andersen EV](https://andersen-ev.com/)__
-- __[Electric Miles](https://electricmiles.com/)__
+- __[Andersen EV](https://www.andersen-ev.com/)__
+- __[Electric Miles](https://www.electricmiles.com/)__
 
 #### 🏗️ IOT & Smart Buildings
 
 - __[District Technologies](https://www.crunchbase.com/organization/district-technologies)__
-- __[Ome](https://omeproducts.com/)__
+- __[Ome](https://www.omeproducts.com/)__
 
 #### 🛒 Retail
 
@@ -43,12 +43,12 @@ I founded __Designibl__, a technology startup in the UK, that went on hiatus as 
 
 ## About the blog
 
-- Framework: [Astro](https://astro.build/)
-- CMS: [TinaCMS](https://tina.io/)
-- Deployed via: [Vercel](https://vercel.com/)
+- Framework: [Astro](https://www.astro.build/)
+- CMS: [TinaCMS](https://www.tina.io/)
+- Deployed via: [Vercel](https://www.vercel.com/)
 
 Many thanks to Cassidoo for the original template.
 
-You can [clone it on GitHub](https://github.com/cassidoo/blahg) to use it for yourself.
+You can [clone it on GitHub](https://www.github.com/cassidoo/blahg) to use it for yourself.
 
 Enjoy!
